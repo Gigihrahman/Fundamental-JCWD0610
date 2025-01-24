@@ -97,3 +97,15 @@ let randStr2: string = "An apple a day keeps the doctor away";
 console.log(randStr2.toLowerCase().replaceAll("a", "*"));
 
 console.log(randStr2.replaceAll("a", "*").replaceAll("A", "*"));
+const lowerRandstr2: string = randStr2.toLowerCase();
+let replacedword: string = "a";
+let modifiedString: string = "";
+
+for (let i = 0; i < lowerRandstr2.length; i++) {
+  if (lowerRandstr2[i] === replacedword) {
+    modifiedString += "*";
+  } else {
+    modifiedString += lowerRandstr2[i];
+  }
+}
+console.log(modifiedString);
