@@ -22,7 +22,9 @@ class CalculateStudent {
     let tempScore = [];
     let tempAge = [];
 
-    const sortStudentByScore = this.students.sort((a, b) => a.score - b.score);
+    const sortStudentByScore = this.students.sort(
+      (a: any, b: any) => a.score - b.score
+    );
     console.log("sorted nih bang", sortStudentByScore);
 
     students.forEach((val) => {
